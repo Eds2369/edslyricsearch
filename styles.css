@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+:root {
+    --custom-color: #df9eee;
+    --custom-color-2: #79f7ad;
+}
+
+body {
+    background-color: rgb(46, 46, 46);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(.95);
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+header {
+    background-image: url('https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+header * {
+    z-index: 1;
+}
+
+header h1 {
+    margin: 0 0 30px;
+}
+
+form {
+    position: relative;
+    width: 50%;
+    max-width: 500px;
+    min-width: 400px;
+}
+
+form input {
+    border: 0;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 15px 30px;
+    width: 100%;
+}
+
+form button {
+    background-color: #df9eee;
+    border: 0;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 13px 30px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+.btn {
+    background-color: var(--custom-color-2);
+    border: 0;
+    border-radius: 10px;
+    padding: 4px 10px;
+}
+
+.back-btn {
+    cursor: pointer;
+    background-color: var(--custom-color);
+    padding: 2px 5px;
+    width: fit-content;
+}
+
+ul.songs {
+    list-style-type: none;
+    padding: 0;
+}
+
+.songs li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+.songs li:hover {
+    background-color: rgb(32, 32, 32);
+}
+
+.songs li:not(:last-child) {
+    border-bottom: 1px solid rgba(223, 158, 238, 0.25);
+}
+
+.songs li .list-flex {
+    display: flex;
+}
+
+.songs li .list-flex .song-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.container {
+    padding: 30px;
+    /* margin: 30px auto;
+    max-width: 100%;
+    width: 500px; */
+}
+
+.container h2 {
+    font-weight: 300;
+}
+
+.container p {
+    text-align: left;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.centered button {
+    transform: scale(1.3);
+    margin: 15px;
+}
+
+#more {
+    padding: 0;
+}
+
+@media (max-width: 540px) {
+    form {
+        width: 90%;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
