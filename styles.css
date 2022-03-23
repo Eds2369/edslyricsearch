@@ -162,6 +162,7 @@ ul.songs {
 @media (max-width: 540px) {
     form {
         width: 90%;
+        min-width: 300px;
     }
 
     .container {
