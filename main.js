@@ -45,7 +45,6 @@ function showData(data) {
                     <p>${song.title}</p>
                         </div>
                     </div>
-                    <button class="btn" data-artist="${song.artist.name}" data-songtitle="${song.title}">Get Lyrics</button>
                 </li>
             `).join('')} 
         </ul>    
